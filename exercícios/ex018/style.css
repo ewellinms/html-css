@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Picturama Founder';
+    src: url('../ex018/fonts/PicturamaAlternate_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+    /* 
+    Tipos de format:
+    opentype (otf)
+    truetype (ttf)
+    embedded-opentype
+    truetype-aat (Apple, Advanced, Typografy)
+    svg
+    */
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-family: 'Picturama Founder', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+}

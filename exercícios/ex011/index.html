@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML</p>
+    <audio src="midia/RaagPahadi-SandeepDas.mp3" controls autoplay></audio>
+    <!--Tem muito navegador que não tem total compatibilidade com alguns formatos de arquivos. Ele é compativel com o MPEG WAV OGG se quiser ter compatibilidade com todos os navegadores,você tem que ter outras formas de adicionar audios-->
+   
+     <audio>
+        <source src="midia/RaagPahadi-SandeepDas.mp3"  type="audio/mpeg">
+        <!--Se você tiver o audio em outros formatos, coloca aqui, não temos mas ainda assim vamos colocar-->
+        <source src="midia/RaagPahadi-SandeepDas.ogg" type="audio/ogg">
+        <source src="midia/RaagPahadi-SandeepDas.wav" type="audio/wav">
+        <!--a ordem é muito importante. primeiro ele vai tentar o mp3, ele vai tentar o ogg, e se não conseguir ele vai tentar o wav, e se ele não conseguir...-->
+        <p>Infelizmente, seu navegador não consegue reproduzir audio. <a href="midia/RaagPahadi-SandeepDas.mp3">Clique aqui para baixar o arquivo MP3.</a>
+            
+        </p>
+    </audio>
+</body>
+</html>
